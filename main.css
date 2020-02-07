@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+}
+h3{
+    color: royalblue;
+}
+h4{
+    color: violet;
+}
+.gif{
+    margin-bottom: 100px;
+}
+.edit{
+    width: 800px;
+    max-height: 500px;
+}
+#editor{
+    max-height: 500px;
+}
