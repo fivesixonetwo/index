@@ -477,7 +477,7 @@ body {
   fill: #f7f9f8; }
 
 .header-img {
-  background-image: url(../../img/1234.jpg);
+  background-image: url(/img/1234.jpg);
   background-size: cover;
   background-position: bottom;
   height: 62rem;
