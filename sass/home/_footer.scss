@@ -1,0 +1,97 @@
+//FOOTER
+.footer {
+  margin-top: 64px;
+  background-color: $color-footer;
+  &-line {
+    margin: 32px 0;
+    margin-top: 48px;
+  }
+}
+.policy {
+  padding-top: 48px;
+  &__list {
+    & > li {
+      margin-top: 16px;
+    }
+    & > li > a {
+      font-size: 1.4rem;
+      color: $color-text-2;
+    }
+    & > li > a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.footernav {
+  * a:hover {
+    text-decoration: underline;
+  }
+
+  &__content {
+    font-size: 1.4rem;
+    color: $color-text-2;
+    justify-content: space-between;
+    padding-bottom: 32px;
+  }
+  &__text {
+    color: $color-text-2;
+  }
+  &__item:before {
+    content: "·";
+    font-size: 2.5rem;
+    vertical-align: middle;
+    vertical-align: top;
+    line-height: 20px;
+    margin: 0 12px;
+    align-items: center;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+    & > span {
+      font-size: 1.6rem;
+      margin-left: 6px;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+    & > b {
+      font-size: 2rem;
+    }
+  }
+  &__change {
+    display: flex;
+    align-items: center;
+    & > li:first-child {
+      margin-right: 24px;
+    }
+    &-icon {
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &__social {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    & > li {
+      margin-left: 24px;
+    }
+    &-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

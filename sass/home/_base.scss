@@ -1,0 +1,110 @@
+// COLOR VARIABLES
+$color-primary: #ffffff;
+$color-primary-dark: #b28451;
+$color-logo: rgb(255, 56, 92);
+
+:root {
+  --opacity: 0.4;
+  --header-hover-color: rgba(255, 255, 255, 0.15);
+  --header-line-color: #dddddd;
+}
+
+$color-secondary: #101d2c;
+$navigation-height: 8rem;
+
+$color-text-1: #f7f9f8;
+$color-text-2: #000000;
+$color-text-3: rgb(113, 113, 113);
+$color-text-4: #797979;
+$color-grey-light-2: #dddddd;
+$color-footer: #f7f7f7;
+
+$color-grey-1: #717171;
+$color-grey-dark-2: #6d5d4b;
+$color-dark-1: #000000;
+
+// FONT VARIABLES
+$font-primary: "Roboto", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+$default-font-size: 1.6rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+//ANIMATION
+@-webkit-keyframes slideIn {
+  from {
+    top: 70%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    top: 70%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns:
+    [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr)
+    [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      )
+      [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
+  }
+}

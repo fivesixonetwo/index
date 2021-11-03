@@ -1,0 +1,172 @@
+// NEARBY
+.nearby {
+  margin-bottom: 64px;
+  &__item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 8px;
+  }
+  &__content {
+    margin-left: 16px;
+    font-size: 1.4rem;
+    color: $color-text-2;
+    display: flex;
+    flex-direction: column;
+    & > span:first-child {
+      font-weight: 400;
+    }
+  }
+}
+
+// ANYWHERE
+.anywhere {
+  &__link {
+    font-size: 1.8rem;
+    color: $color-text-2;
+    font-weight: 400;
+  }
+  &__img {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+//BANNER
+.banner {
+  margin-top: 48px;
+  position: relative;
+  margin-bottom: 64px;
+  &__img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+  }
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color-text-2;
+  }
+  &__button {
+    margin-top: 40px;
+  }
+}
+
+//DISCOVER
+.discover {
+  &__img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    color: $color-text-2;
+    &-header {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    &-text {
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  }
+}
+
+//HOSTING
+.hosting {
+  &__content span {
+    color: $color-text-1;
+    max-width: 300px;
+    overflow-wrap: normal;
+  }
+}
+
+//GETAWAY
+.futuregetaway {
+  &__list {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-text-3;
+  }
+  &__wrap {
+    white-space: nowrap;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__item {
+    padding: 8px 10px;
+    margin: 6px 0;
+    &.futuregetaway__item--active {
+      cursor: default;
+      color: $color-text-2;
+    }
+    &.futuregetaway__item--active:hover {
+      cursor: default;
+    }
+  }
+  &__item:first-child {
+    margin-left: -10px;
+  }
+  &__item:hover {
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  &__item:not(:first-child) {
+    margin-left: 6px;
+  }
+  &__line {
+    &--up {
+      position: relative;
+      width: 0;
+      left: 0;
+      transition: all 0.2s ease;
+      height: 2.2px;
+      background-color: $color-dark-1;
+    }
+    &--down {
+      height: 1px;
+      width: 100%;
+      background-color: rgb(221, 221, 221);
+    }
+  }
+  &__content {
+    font-size: 1.4rem;
+    display: none;
+    color: $color-text-2;
+  }
+  &__content.futuregetaway__content--active {
+    display: flex;
+  }
+  &__getaway {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    & > span:hover {
+      cursor: pointer;
+    }
+    & > span:not(:first-child) {
+      color: $color-text-3;
+    }
+  }
+}

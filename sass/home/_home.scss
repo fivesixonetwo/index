@@ -1,0 +1,175 @@
+%icon-default-size {
+  height: 16px;
+  width: 16px;
+  fill: $color-text-1;
+}
+
+.header-img {
+  background-image: url(../../img/1234.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 62rem;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    text-align: center;
+    &-text {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 3rem;
+      color: $color-secondary;
+    }
+  }
+}
+
+.header {
+  width: 100%;
+}
+
+.navigation {
+  width: 100%;
+  font-size: $default-font-size;
+  color: $color-text-1;
+  position: fixed;
+  z-index: 99999;
+  box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.18);
+  transition: background-color 0.15s linear;
+  &::before {
+    background-image: -webkit-linear-gradient(
+      to bottom,
+      #000,
+      rgba(0, 0, 0, 0)
+    );
+    background-image: -moz-linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+    content: "";
+    height: calc(1.4 *#{$navigation-height});
+    left: 0 !important;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    -webkit-transition: 150ms opacity ease;
+    -moz-transition: 150ms opacity ease;
+    transition: 150ms opacity ease;
+    opacity: var(--opacity);
+    z-index: 0;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $navigation-height;
+  }
+  &__logo {
+    display: block;
+    height: 32px;
+    flex: 1;
+    z-index: 1;
+  }
+
+  &__search {
+    max-width: 348px;
+  }
+
+  &__user {
+    flex: 1;
+    z-index: 1;
+    &-list {
+      display: flex;
+      align-items: center;
+      float: right;
+    }
+    &-item {
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      &:not(:last-child):hover {
+        background-color: var(--header-hover-color);
+        border-radius: 100px;
+        cursor: pointer;
+      }
+    }
+
+    &-host > a {
+      color: $color-text-1;
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+    &-globe {
+      @extend %icon-default-size;
+    }
+    &-profile {
+      position: relative;
+      margin-left: 8px;
+      display: flex;
+      align-items: center;
+      background-color: $color-primary;
+      padding: 5px 8px;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: box-shadow 0.2s ease;
+      border: 1px solid #dddddd;
+      &:hover {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+      }
+    }
+
+    &-icon {
+      @extend %icon-default-size;
+      fill: $color-secondary;
+      &-profile {
+        margin-left: 12px;
+        height: 32px;
+        width: 32px;
+        fill: $color-grey-1;
+      }
+    }
+    &-control {
+      display: none;
+      overflow: hidden;
+      position: absolute;
+      padding: 6px 0;
+      top: calc(100% + 16px);
+      width: 230px;
+      border-radius: 12px;
+      right: 0;
+      color: $color-text-2;
+      background-color: $color-primary;
+      box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.18);
+      &--bold {
+        font-weight: 400;
+      }
+    }
+    &-author {
+      border-bottom: 1px solid rgb(238, 238, 238);
+      & > span:last-child {
+        margin-bottom: 6px;
+      }
+    }
+    &-host {
+      & > span:nth-child(1) {
+        margin-top: 6px;
+      }
+    }
+    &-text {
+      display: block;
+      padding: 10px 16px;
+      &:hover {
+        background-color: rgb(247, 247, 247);
+      }
+    }
+  }
+}
+
+#main-content {
+  margin-top: 32px;
+}
