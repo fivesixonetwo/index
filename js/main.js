@@ -273,6 +273,7 @@ const searchExpandMClose = $(".search-expand__location-m-icon");
 btnShowSearchM.onclick = function () {
     $("body").style.overflowY = "hidden";
     searchExpandM.style.display = "block";
+    btnLocationVideo.play();
     $(".search-expand__location-m-input").focus();
 }
 searchExpandMClose.onclick = function () {
