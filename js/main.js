@@ -8,8 +8,8 @@ const futuregetawayItemContents = $$(".futuregetaway__content")
 const futuregetawayItemActive = $(".futuregetaway__item.futuregetaway__item--active")
 const futuregetawayLineUp = $(".futuregetaway__line--up")
 const lineMinus = futuregetawayItemActive.offsetLeft;
-
-futuregetawayLineUp.style.left = (futuregetawayItemActive.offsetLeft - lineMinus) + "px";
+const b = +-getComputedStyle($(".futuregetaway__wrap")).marginLeft.replace("px", ""); // get margin left responsive
+futuregetawayLineUp.style.left = (futuregetawayItemActive.offsetLeft - lineMinus + 1 + b) + "px";
 futuregetawayLineUp.style.width = (futuregetawayItemActive.offsetWidth - 20) + "px";
 
 futuregetawayItems.forEach((item, index) => {
@@ -18,7 +18,7 @@ futuregetawayItems.forEach((item, index) => {
         let lineMinus2 = futuregetawayItemActive.offsetLeft;
         $(".futuregetaway__item.futuregetaway__item--active").classList.remove("futuregetaway__item--active");
         $(".futuregetaway__content.futuregetaway__content--active").classList.remove("futuregetaway__content--active");
-        futuregetawayLineUp.style.left = (this.offsetLeft - lineMinus2) + "px";
+        futuregetawayLineUp.style.left = (this.offsetLeft - lineMinus2 + 1 + +-getComputedStyle($(".futuregetaway__wrap")).marginLeft.replace("px", "")) + "px";
         futuregetawayLineUp.style.width = (this.offsetWidth - 20) + "px";
 
         this.classList.add("futuregetaway__item--active");
@@ -140,15 +140,13 @@ btnHeader.forEach((btn, index) => btn.onclick = () => {
 const searchBarActive = function () {
     btnSearchCheck = true;
     if (check === 1) {
-        btnSearch.style.marginLeft = 10 + "rem";
+        btnSearch.classList.add("btn-searchbar--active");
     }
     else {
-        btnSearch.style.marginLeft = 5.5 + "rem";
+        btnSearch.classList.add("btn-searchbar--active-2");
     }
-    btnSearch.style.width = 120 + "px";
     btnSearchText.style.display = "flex";
     searchbarGuestWrap.style.flexGrow = 1.2;
-    btnSearch.classList.add("btn-searchbar--active");
 }
 const searchbarItemActive = (btn, index) => {
     if (btn.classList.contains("searchbar__location")) {
@@ -211,25 +209,35 @@ const searchBox_a = $(".search-box__header-item-link");
 const navHost_a = $(".navigation__user-host > a");
 const globe = $(".navigation__user-globe");
 const btnShowSearch = $(".btn-show-search");
+const navSearch = $(".navigation__search");
+const navM = $(".navigation-m");
+const mBtnShow = $(".m-btn-show-search");
 
+$(".navigation").classList.add("navigation--active")
 btnShowSearch.onclick = function () {
-    nav.style.paddingBottom = "10rem";
-    searchBox.style.display = "block";
+    $(".navigation").classList.add("navigation--active")
+    navSearch.style.display = "block";
     btnShowSearch.style.display = "none";
 }
 
+if ($(".navigation.navigation--active"))
+    $(".navigation.navigation--active").classList.remove("navigation--active");
 
 window.onscroll = function (e) {
     yOffset = this.pageYOffset;
     if (yOffset > 0) {
+        mBtnShow.style.backgroundColor = "#f7f7f7";
         checkscroll = true;
-        nav.style.paddingBottom = "0";
+        if ($(".navigation.navigation--active"))
+            $(".navigation.navigation--active").classList.remove("navigation--active");
         btnShowSearch.style.display = "flex";
-        searchBox.style.display = "none";
+        navSearch.style.display = "none";
         nav.style.backgroundColor = "#FFFFFF";
+        navM.style.backgroundColor = "#FFFFFF";
         searchBox.style.color = "#000000";
         searchBox_a.style.color = "#000000";
         navHost_a.style.color = "#000000";
+        navM.style.boxShadow = "0px 0px 8px rgba(0, 0, 0, 0.18)";
         globe.style.fill = "#000000";
         navLogo.style.fill = "rgb(255, 56, 92)";
         document.documentElement.style.setProperty('--opacity', 0);
@@ -237,13 +245,17 @@ window.onscroll = function (e) {
         document.documentElement.style.setProperty('--header-line-color', "#000000");
     }
     else {
+        mBtnShow.style.backgroundColor = "#FFFFFF";
         checkscroll = false;
-        nav.style.paddingBottom = "0";
+        if ($(".navigation.navigation--active"))
+            $(".navigation.navigation--active").classList.remove("navigation--active");
         btnShowSearch.style.display = "none";
-        searchBox.style.display = "block";
+        navSearch.style.display = "block";
         navHost_a.style.color = "#f7f9f8";
         searchBox.style.color = "#f7f9f8";
+        navM.style.boxShadow = "unset";
         nav.style.backgroundColor = "transparent";
+        navM.style.backgroundColor = "transparent";
         navLogo.style.fill = "#FFFFFF";
         globe.style.fill = "#f7f9f8";
         searchBox_a.style.color = "#f7f9f8";
@@ -253,11 +265,30 @@ window.onscroll = function (e) {
     }
 }
 
+//btn responsive
+const btnShowSearchM = $(".m-btn-show-search");
+const searchExpandM = $(".search-expand__location-m");
+const searchExpandMClose = $(".search-expand__location-m-icon");
+
+btnShowSearchM.onclick = function () {
+    $("body").style.overflowY = "hidden";
+    searchExpandM.style.display = "block";
+    $(".search-expand__location-m-input").focus();
+}
+searchExpandMClose.onclick = function () {
+    $("body").style.overflowY = "auto";
+    searchExpandM.style.height = "0";
+    setTimeout(function () {
+        searchExpandM.style.height = "100vh";
+        searchExpandM.style.display = "none";
+    }, 280)
+}
 
 window.onclick = function (event) {
     if (!event.target.closest(".navigation") && checkscroll) {
-        nav.style.paddingBottom = "0";
-        searchBox.style.display = "none";
+        if ($(".navigation.navigation--active"))
+            $(".navigation.navigation--active").classList.remove("navigation--active");
+        navSearch.style.display = "none";
         btnShowSearch.style.display = "flex";
     }
     if (!event.target.closest(".navigation__user-profile")) {
@@ -269,19 +300,23 @@ window.onclick = function (event) {
     if (!event.target.closest(".search-expand") && !event.target.closest(".search-box__header-item") && !event.target.closest(".searchbox__header") && !event.target.closest(".searchbar__wrap") && !event.target.closest(".searchbar-wrap") && !event.target.closest(".btn-searchbar") && event.target !== btnSearch) {
         if ($(".btn-searchbar.btn-searchbar--active"))
             $(".btn-searchbar.btn-searchbar--active").classList.remove("btn-searchbar--active");
+        if ($(".btn-searchbar.btn-searchbar--active-2"))
+            $(".btn-searchbar.btn-searchbar--active-2").classList.remove("btn-searchbar--active-2");
         btnSearchCheck = false;
         removeClass1();
         displayNoneExpand();
     }
     if (!btnSearchCheck) {
-        btnSearch.style.width = 50 + "px";
-        btnSearch.style.marginLeft = 5.5 + "rem";
+        if ($(".btn-searchbar.btn-searchbar--active"))
+            $(".btn-searchbar.btn-searchbar--active").classList.remove("btn-searchbar--active");
+        if ($(".btn-searchbar.btn-searchbar--active-2"))
+            $(".btn-searchbar.btn-searchbar--active-2").classList.remove("btn-searchbar--active-2");
         btnSearchText.style.display = "none";
         searchbarGuestWrap.style.flexGrow = 0.5;
         if (check === 1) {
             searchbarGuestWrap.style.flexGrow = 1.2;
         }
-        else { 
+        else {
             searchbarGuestWrap.style.flexGrow = 0.5;
         }
     }

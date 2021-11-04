@@ -37,13 +37,13 @@
               </svg>
             </a>
           </div>
+          <button class="btn-show-search">
+            <span class="btn-show-search__text">Start your search</span>
+            <svg class="btn-show-search__icon">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
           <div class="navigation__search">
-            <button class="btn-show-search">
-              <span class="btn-show-search__text">Start your search</span>
-              <svg class="btn-show-search__icon">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
-              </svg>
-            </button>
             <div class="search-box">
               <ul class="search-box__header">
                 <li
@@ -65,6 +65,7 @@
               <div class="searchbar">
                 <div class="searchbar__wrap">
                   <div
+                    title="Where are you going?"
                     class="
                       searchbar__item
                       searchbar__location
@@ -283,6 +284,51 @@
           </div>
         </div>
       </nav>
+      <nav class="navigation-m">
+        <div class="grid wide">
+          <button class="m-btn-show-search">
+            <div class="m-btn-show-search__wrap">
+              <svg class="m-btn-show-search__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              <span class="m-btn-show-search__text">Where are you going?</span>
+            </div>
+          </button>
+        </div>
+        <div class="search-expand__location search-expand__location-m">
+          <div class="search-expand__location-m-wrap">
+            <svg class="search-expand__location-m-icon">
+              <use xlink:href="img/sprite.svg#icon-chevron-left"></use>
+            </svg>
+            <input
+              placeholder="Where are you going?"
+              class="search-expand__location-m-input"
+              type="text"
+            />
+          </div>
+          <span
+            class="search-expand__location-text search-expand__location-m-text"
+            >Go anywhere, anytime</span
+          >
+          <button class="btn--flexible btn-location">
+            <span class="btn-location__text">I'm flexible</span>
+            <div class="btn-location__video">
+              <video
+                class="btn-location__video-content"
+                autoplay
+                muted
+                preload="auto"
+              >
+                <source
+                  src="./assets/video/airbnb-search-icon.mp4"
+                  type="video/mp4"
+                />
+                Your browser is not supported!
+              </video>
+            </div>
+          </button>
+        </div>
+      </nav>
       <div class="header-img">
         <div class="header-img__content">
           <span class="header-img__content-text"
@@ -323,23 +369,23 @@
               <div class="modal-suggest">
                 <h2 class="heading-3">Suggested language and region</h2>
                 <div class="row modal-suggest__list">
-                  <div class="col c-2 modal-item modal-suggest__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-suggest__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-suggest__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-suggest__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-suggest__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-suggest__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-suggest__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-suggest__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-suggest__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-suggest__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
@@ -351,7 +397,9 @@
                   <div
                     class="
                       col
-                      c-2
+                      l-2
+                      m-2
+                      c-3
                       modal-item
                       modal-languages__item
                       item--active
@@ -360,163 +408,163 @@
                     <span>English</span>
                     <span>United States</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Bahasa Indonesia</span>
                     <span>Indonesia</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Bahasa Indonesia</span>
                     <span>Indonesia</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Bahasa Indonesia</span>
                     <span>Indonesia</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Bahasa Indonesia</span>
                     <span>Indonesia</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Tiếng Việt</span>
                     <span>Việt Nam</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
-                  <div class="col c-2 modal-item modal-languages__item">
+                  <div class="col l-2 m-2 c-3 modal-item modal-languages__item">
                     <span>Русский</span>
                     <span>Россия</span>
                   </div>
@@ -527,40 +575,48 @@
               <h2 class="heading-3">Choose a currency</h2>
               <div class="row modal-currency__list">
                 <div
-                  class="col c-2 modal-item modal-currency__item item--active"
+                  class="
+                    col
+                    l-2
+                    m-2
+                    c-5
+                    modal-item
+                    modal-currency__item
+                    item--active
+                  "
                 >
                   <span>United States dollar</span>
                   <span>USD - $</span>
                 </div>
-                <div class="col c-2 modal-item modal-currency__item">
+                <div class="col l-2 m-2 c-3 modal-item modal-currency__item">
                   <span>Chinese yuan</span>
                   <span>CNY - ￥</span>
                 </div>
-                <div class="col c-2 modal-item modal-currency__item">
+                <div class="col l-2 m-2 c-3 modal-item modal-currency__item">
                   <span>Bulgarian lev</span>
                   <span>BGN - лв.</span>
                 </div>
-                <div class="col c-2 modal-item modal-currency__item">
+                <div class="col l-2 m-2 c-3 modal-item modal-currency__item">
                   <span>United States dollar</span>
                   <span>USD - $</span>
                 </div>
-                <div class="col c-2 modal-item modal-currency__item">
+                <div class="col l-2 m-2 c-3 modal-item modal-currency__item">
                   <span>Chinese yuan</span>
                   <span>CNY - ￥</span>
                 </div>
-                <div class="col c-2 modal-item modal-currency__item">
+                <div class="col l-2 m-2 c-3 modal-item modal-currency__item">
                   <span>Bulgarian lev</span>
                   <span>BGN - лв.</span>
                 </div>
-                <div class="col c-2 modal-item modal-currency__item">
+                <div class="col l-2 m-2 c-3 modal-item modal-currency__item">
                   <span>United States dollar</span>
                   <span>USD - $</span>
                 </div>
-                <div class="col c-2 modal-item modal-currency__item">
+                <div class="col l-2 m-2 c-3 modal-item modal-currency__item">
                   <span>Chinese yuan</span>
                   <span>CNY - ￥</span>
                 </div>
-                <div class="col c-2 modal-item modal-currency__item">
+                <div class="col l-2 m-2 c-3 modal-item modal-currency__item">
                   <span>Bulgarian lev</span>
                   <span>BGN - лв.</span>
                 </div>
@@ -575,7 +631,7 @@
       <section class="nearby">
         <h1 class="heading-1">Explore nearby</h1>
         <div class="row nearby__list">
-          <div class="col c-3 nearby__item">
+          <div class="col l-3 m-3 c-6 nearby__item">
             <a href="#" class="nearby__link">
               <img
                 class="nearby__img"
@@ -588,7 +644,7 @@
               </div>
             </a>
           </div>
-          <div class="col c-3 nearby__item">
+          <div class="col l-3 m-3 c-6 nearby__item">
             <a href="#" class="nearby__link">
               <img
                 class="nearby__img"
@@ -601,7 +657,7 @@
               </div>
             </a>
           </div>
-          <div class="col c-3 nearby__item">
+          <div class="col l-3 m-3 c-6 nearby__item">
             <a href="#" class="nearby__link">
               <img
                 class="nearby__img"
@@ -614,7 +670,7 @@
               </div>
             </a>
           </div>
-          <div class="col c-3 nearby__item">
+          <div class="col l-3 m-3 c-6 nearby__item">
             <a href="#" class="nearby__link">
               <img
                 class="nearby__img"
@@ -627,7 +683,7 @@
               </div>
             </a>
           </div>
-          <div class="col c-3 nearby__item">
+          <div class="col l-3 m-3 c-6 nearby__item">
             <a href="#" class="nearby__link">
               <img
                 class="nearby__img"
@@ -640,7 +696,7 @@
               </div>
             </a>
           </div>
-          <div class="col c-3 nearby__item">
+          <div class="col l-3 m-3 c-6 nearby__item">
             <a href="#" class="nearby__link">
               <img
                 class="nearby__img"
@@ -653,7 +709,7 @@
               </div>
             </a>
           </div>
-          <div class="col c-3 nearby__item">
+          <div class="col l-3 m-3 c-6 nearby__item">
             <a href="#" class="nearby__link">
               <img
                 class="nearby__img"
@@ -666,7 +722,7 @@
               </div>
             </a>
           </div>
-          <div class="col c-3 nearby__item">
+          <div class="col l-3 m-3 c-6 nearby__item">
             <a href="#" class="nearby__link">
               <img
                 class="nearby__img"
@@ -685,7 +741,7 @@
       <section class="anywhere">
         <h1 class="heading-1">Live anywhere</h1>
         <ul class="row anywhere__list">
-          <li class="col c-3 anywhere__item">
+          <li class="col l-3 m-3 c-12 anywhere__item">
             <a href="#" class="anywhere__link">
               <img
                 class="anywhere__img"
@@ -695,7 +751,7 @@
               <span>Outdoor getaways</span>
             </a>
           </li>
-          <li class="col c-3 anywhere__item">
+          <li class="col l-3 m-3 c-12 anywhere__item">
             <a href="#" class="anywhere__link">
               <img
                 class="anywhere__img"
@@ -705,7 +761,7 @@
               <span>Unique stays</span>
             </a>
           </li>
-          <li class="col c-3 anywhere__item">
+          <li class="col l-3 m-3 c-12 anywhere__item">
             <a href="#" class="anywhere__link">
               <img
                 class="anywhere__img"
@@ -715,7 +771,7 @@
               <span>Entire homes</span>
             </a>
           </li>
-          <li class="col c-3 anywhere__item">
+          <li class="col l-3 m-3 c-12 anywhere__item">
             <a href="#" class="anywhere__link">
               <img
                 class="anywhere__img"
@@ -750,7 +806,7 @@
       <section class="discover">
         <h1 class="heading-1 discover__header">Discover things to do</h1>
         <ul class="row discover__list">
-          <li class="col c-4 discover__item">
+          <li class="col l-4 m-4 c-12 discover__item">
             <a href="#" class="discover__link">
               <img
                 class="discover__img"
@@ -765,7 +821,7 @@
               </div>
             </a>
           </li>
-          <li class="col c-4 discover__item">
+          <li class="col l-4 m-4 c-12 discover__item">
             <a href="#" class="discover__link">
               <img
                 class="discover__img"
@@ -780,7 +836,7 @@
               </div>
             </a>
           </li>
-          <li class="col c-4 discover__item">
+          <li class="col l-4 m-4 c-12 discover__item">
             <a href="#" class="discover__link">
               <img
                 class="discover__img"
@@ -854,501 +910,501 @@
           <div
             class="row futuregetaway__content futuregetaway__content--active"
           >
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-          </div>
-          <div class="row futuregetaway__content">
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
           </div>
           <div class="row futuregetaway__content">
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
           </div>
           <div class="row futuregetaway__content">
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
-              <span> Phoenix </span>
-              <span> Arizona </span>
-            </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
           </div>
           <div class="row futuregetaway__content">
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
           </div>
           <div class="row futuregetaway__content">
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
-            <div class="col c-3 futuregetaway__getaway">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+          </div>
+          <div class="row futuregetaway__content">
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
+              <span> Phoenix </span>
+              <span> Arizona </span>
+            </div>
+            <div class="col l-3 m-3 c-6 futuregetaway__getaway">
               <span> Phoenix </span>
               <span> Arizona </span>
             </div>
@@ -1360,7 +1416,7 @@
     <footer class="footer">
       <div class="grid wide">
         <div class="row policy">
-          <div class="col c-3 policy__about">
+          <div class="col l-3 m-3 c-6 policy__about">
             <h4 class="heading-4">ABOUT</h4>
             <ul class="policy__list">
               <li>
@@ -1395,7 +1451,7 @@
               </li>
             </ul>
           </div>
-          <div class="col c-3 policy__community">
+          <div class="col l-3 m-3 c-6 policy__community">
             <h4 class="heading-4">COMMUNITY</h4>
             <ul class="policy__list">
               <li>
@@ -1424,7 +1480,7 @@
               </li>
             </ul>
           </div>
-          <div class="col c-3 policy__host">
+          <div class="col l-3 m-3 c-6 policy__host">
             <h4 class="heading-4">HOST</h4>
             <ul class="policy__list">
               <li>
@@ -1447,7 +1503,7 @@
               </li>
             </ul>
           </div>
-          <div class="col c-3 policy__support">
+          <div class="col l-3 m-3 c-6 policy__support">
             <h4 class="heading-4">SUPPORT</h4>
             <ul class="policy__list">
               <li>
