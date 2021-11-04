@@ -281,7 +281,7 @@ window.onclick = function (event) {
         if (check === 1) {
             searchbarGuestWrap.style.flexGrow = 1.2;
         }
-        else {
+        else { 
             searchbarGuestWrap.style.flexGrow = 0.5;
         }
     }
