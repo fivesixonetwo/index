@@ -25,7 +25,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <nav class="navigation">
         <div class="grid wide navigation__wrap">
           <div class="navigation__logo">
@@ -327,6 +327,26 @@
               </video>
             </div>
           </button>
+        </div>
+      </nav>
+      <nav class="footer-navigation-m">
+        <a href="#header" class="footer-navigation-m__group">
+          <svg class="footer-navigation-m__icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+          <span>Explore</span>
+        </a>
+        <div class="footer-navigation-m__group">
+          <svg class="footer-navigation-m__icon">
+            <use xlink:href="img/sprite2.svg#icon-heart"></use>
+          </svg>
+          <span>Wishlists</span>
+        </div>
+        <div class="footer-navigation-m__group">
+          <svg class="footer-navigation-m__icon">
+            <use xlink:href="img/sprite.svg#icon-user-circle"></use>
+          </svg>
+          <span>Log in</span>
         </div>
       </nav>
       <div class="header-img">
@@ -790,7 +810,9 @@
             <span class="heading-0 banner__header banner__header-top">
               The Greatest Outdoors
             </span>
-            <span class="banner__text banner__text-top"> Wishlists curated by Airbnb. </span>
+            <span class="banner__text banner__text-top">
+              Wishlists curated by Airbnb.
+            </span>
             <div class="banner__button banner__button-top">
               <span class="btn-banner btn-banner-top">Get inspired</span>
             </div>
@@ -1550,7 +1572,9 @@
                 <li>
                   <div href="#" class="footernav__link btn-modal-globe">
                     <svg class="footernav__change-icon">
-                      <use xlink:href="img/sprite.svg#icon-network"></use>
+                      <use
+                        xlink:href="/assets/img/sprite.svg#icon-notifications-outline"
+                      ></use>
                     </svg>
                     <span>English (US)</span>
                   </div>
