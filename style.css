@@ -15,10 +15,6 @@ body {
     text-shadow: 0.4px 0.4px 0.4px rgba(0,0,0,.2);
 }
 
-.hidden {
-    display: none;
-}
-
 h1 {
     font-weight: lighter;
     grid-column: span 3;
