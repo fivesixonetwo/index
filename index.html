@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="img/love.png">
-
     <title>Tiến ❤ Huyền</title>
   </head>
   <body>
+    <iframe src="silence/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
     <div id="wrapper">
       <h1>LOVE DAYS</h1>
 
@@ -32,9 +32,13 @@
         </div>
       </div>
 
+      
       <div id="music">
-        <audio loop autoplay controls>
+        <!-- <audio loop autoplay controls>
           Your browser does not support the audio element.
+        </audio> -->
+        <audio id="player" preload="auto" autoplay loop controls>
+          <source class="source" src="music/infinity.mp3" type="audio/mp3">
         </audio>
       </div>
       <footer>Thank you for your love 💕</footer>
